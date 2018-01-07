@@ -1,3 +1,5 @@
+# Read output from quadrature encoder module
+# and print to screen
 from microbit import *
 
 pin_last_a = False
