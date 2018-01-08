@@ -6,6 +6,6 @@ pin3.read_analog()
 
 while True:
     voltage = pin3.read_analog();
-    voltage /= 255
+    voltage /= 1024
     voltage *= 3.3
-    print(str(voltage * 3.3) + "V")
+    print(str(voltage) + "V")
