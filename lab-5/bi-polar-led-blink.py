@@ -1,4 +1,5 @@
 # bi-polar led blink
+# toggles between the two led colors
 from microbit import *
 
 state = False

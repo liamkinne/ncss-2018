@@ -1,6 +1,5 @@
 # blink from button
-# led on pin 13
-# button on pin 14
+# led on pin 13, button on pin 14
 from microbit import *
 
 # set as input

@@ -1,3 +1,5 @@
+# pass the parcel
+# simple wireless game
 from microbit import *
 import radio
 

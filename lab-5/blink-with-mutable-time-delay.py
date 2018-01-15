@@ -1,4 +1,5 @@
-# Blink without using sleep() (non-blocking)
+# blink with speed control
+# 
 from microbit import *
 
 state = False
@@ -12,6 +13,6 @@ while True:
         delay += 20
         
     if (running_time() - time_last) >= delay:
-        pin13.write_digital(state)  # write output
-        state = not state           # invert state
-        time_last = running_time()  # store time
+    	state = not state
+        pin13.write_digital(state)
+        time_last = running_time()

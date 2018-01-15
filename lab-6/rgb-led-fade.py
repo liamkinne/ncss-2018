@@ -1,12 +1,13 @@
 # rgb led
+# demo that drives and cycles through all of the colors on an RGB led.
 from microbit import *
 
-def led_set(r, g, b):
-    pin13.write_analog(r)
-    pin14.write_analog(g)
-    pin15.write_analog(b)
-    
+minimum = 0
+maximum = 1023
 
 while True:
-    for i in range(0, 1023):
-        led_set(i % 1023, (300 + i) % 1024, (600 + i) % 1024)
+    for i in range(minimum, maximum):
+        pin0.write_analog(((maximum * 0/3) + i) % maximum)
+        pin1.write_analog(((maximum * 1/3) + i) % maximum)
+        pin2.write_analog(((maximum * 2/3) + i) % maximum)
+        sleep(10)

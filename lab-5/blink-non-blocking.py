@@ -1,4 +1,5 @@
-# Blink without using sleep() (non-blocking)
+# blink without blocking
+# using state machine to avoid sleeping
 from microbit import *
 
 state = False
